@@ -50,6 +50,7 @@ int _printf(const char *format, ...)
 				no_char++;
 			}
 		}
+		format++;
 	}
 	va_end(omar);
 	return (no_char);
