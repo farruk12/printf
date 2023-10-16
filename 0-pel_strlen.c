@@ -11,10 +11,8 @@ int pel_strlens(char *pel)
 {
 	int i;
 
-	i = 0;
-
-	while (pel[i] != '\0')
-		i++;
+	for (i = 0; pel[i] != 0; i++)
+		;
 	return (i);
 
 }
@@ -29,8 +27,7 @@ int pel_strlenc(const char *pel)
 {
 	int i;
 
-	i = 0;
-	while (pel[i] != '\0')
-		i++;
+	for (i = 0; pel[i] != 0; i++)
+                ;
 	return (i);
 }

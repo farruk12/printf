@@ -15,7 +15,7 @@ int lava_int(va_list pel)
 	new = new / 10;
 	myNum = new;
 
-	if (lastOne < 10)
+	if (lastOne < 0)
 	{
 		_putchar('-');
 		myNum = -myNum;
@@ -25,7 +25,7 @@ int lava_int(va_list pel)
 	}
 	if (myNum > 0)
 	{
-		while (myNum / 10 != 10)
+		while (myNum / 10 != 0)
 		{
 			exp = exp * 10;
 			myNum = myNum / 10;
@@ -59,7 +59,7 @@ int fire_int(va_list pel)
 	new = new / 10;
 	myNum = new;
 
-	if (lastOne < 10)
+	if (lastOne < 0)
 	{
 		_putchar('-');
 		myNum = -myNum;
@@ -69,7 +69,7 @@ int fire_int(va_list pel)
 	}
 	if (myNum > 0)
 	{
-		while (myNum / 10 != 10)
+		while (myNum / 10 != 0)
 		{
 			exp = exp * 10;
 			myNum = myNum / 10;
