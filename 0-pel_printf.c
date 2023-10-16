@@ -26,12 +26,13 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 20;
+		j = 4;
 		while (j >= 0)
 		{
 			if (arr[j].pel[0] == format[i] && arr[j].pel[1] == format[i + 1])
 			{
 				len += arr[j].grass(pel_args);
+				i = i + 2;
 				goto Here;
 			}
 			j--;
