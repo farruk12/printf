@@ -8,29 +8,28 @@
 
 int pel_bin(va_list pel)
 {
-	int F = 0;
-	int C = 0;
-	int i, a = 1, b;
+	unsigned int pel_num = va_arg(pel, unsigned int);
+	unsigned int bin[32];
+	int i = 0, pel_len = 0;
+	char digchar;
 
-	unsigned int myNum = va_arg(pel, unsigned int);
-	unsigned int V;
+	if (pel_num == 0)
+	{
+		write(1, "0", 1);
+			return (1);
+	}
+	while (pel_num > 0)
+	{
+		bin[i] = pel_num % 2;
+		pel_num = pel_num / 2;
+		i++;
+	}
+	pel_len = i;
+	for (i = pel_len - 1; i >= 0; i--)
+	{
+		digchar = bin[i] + '0';
+		write(1, &digchar, 1);
+	}
 
-	for (i = 0; i < 32; i++)
-	{
-		V = ((a << (32 - i)) & myNum);
-		if (V >> (31 - i))
-			F = 1;
-		if (F)
-		{
-			b = V >> (31 - i);
-			_putchar(b + 48);
-			C++;
-		}
-	}
-	if (C == 0)
-	{
-		C++;
-		_putchar('0');
-	}
-	return (C);
+	return (pel_len);
 }

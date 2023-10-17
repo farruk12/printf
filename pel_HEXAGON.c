@@ -27,7 +27,7 @@ int pel_HEXAGON(va_list pel)
                 arr[i] = vem % 16;
                 vem = vem / 16;
         }
-        for (i = increment - 1; i >= 0; i++)
+        for (i = increment - 1; i >= 0; i--)
 	{
 		if (arr[i] > 8)
 			arr[i] = arr[i] + 7;
