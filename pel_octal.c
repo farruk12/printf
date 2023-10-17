@@ -20,7 +20,7 @@ int pel_octal(va_list pel)
 		increment++;
 	}
 	increment++;
-	
+
 	arr = malloc(sizeof(int) * increment);
 	for (i = 0; i < increment; i++)
 	{
