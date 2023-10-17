@@ -21,5 +21,5 @@ int pel_strlenc(const char *pel);
 int pel_strlens(char *pel);
 int fire_int(va_list pel);
 int lava_int(va_list pel);
-
+int pel_bin(va_list pel);
 #endif
