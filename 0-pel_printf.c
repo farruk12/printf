@@ -14,7 +14,8 @@ int _printf(const char *format, ...)
 		{"%c", pel_char}, {"%o", pel_octal},
 		{"%i", fire_int}, {"%d", lava_int},
 		{"%%", pel_modular}, {"%b", pel_bin},
-		{"%x", pel_hexagon}, {"%X", pel_HEXAGON}
+		{"%x", pel_hexagon}, {"%X", pel_HEXAGON},
+		{"%S", pel_exstring} 
 	};
 
 	va_list pel_args;

@@ -26,5 +26,8 @@ int pel_octal(va_list pel);
 int pel_unsigned(va_list pel);
 int pel_hexagon(va_list pel);
 int pel_HEXAGON(va_list pel);
+int pel_extra(unsigned int myNum);
+int pel_exstring(va_list pel);
+
 
 #endif
