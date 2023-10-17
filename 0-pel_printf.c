@@ -10,12 +10,12 @@
 int _printf(const char *format, ...)
 {
 	pel_struct arr[] = {
-		{"%s", pel_str}, {"%u", pel_unsigned}, 
+		{"%s", pel_str}, {"%u", pel_unsigned},
 		{"%c", pel_char}, {"%o", pel_octal},
 		{"%i", fire_int}, {"%d", lava_int},
-		{"%%", pel_modular}, {"%b", pel_bin},
-		{"%x", pel_hexagon}, {"%X", pel_HEXAGON},
-		{"%S", pel_exstring}, {"%p.", pel_pointer}
+		{"%%", pel_modular}, {"%b", pel_bin}, {"%R", pel_rot},
+		{"%x", pel_hexagon}, {"%X", pel_HEXAGON}, {"%r", pel_reverse},
+		{"%S", pel_exstring}, {"%p", pel_pointer}
 	};
 
 	va_list pel_args;

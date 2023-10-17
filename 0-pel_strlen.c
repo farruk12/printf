@@ -28,6 +28,6 @@ int pel_strlenc(const char *pel)
 	int i;
 
 	for (i = 0; pel[i] != 0; i++)
-                ;
+		;
 	return (i);
 }

@@ -36,5 +36,6 @@ int pel_extra(unsigned int myNum);
 int pel_exstring(va_list pel);
 int pel_pointer(va_list pel);
 int pel_ex(unsigned long int myNum);
-
+int pel_reverse(va_list pel);
+int pel_rot(va_list args);
 #endif
