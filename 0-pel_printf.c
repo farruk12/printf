@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 9;
+		j = 10;
 		while (j >= 0)
 		{
 			if (arr[j].pel[0] == format[i] && arr[j].pel[1] == format[i + 1])
