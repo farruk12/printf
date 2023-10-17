@@ -10,10 +10,11 @@
 int _printf(const char *format, ...)
 {
 	pel_struct arr[] = {
-		{"%s", pel_str},
-		{"%c", pel_char},
+		{"%s", pel_str}, {"%u", pel_unsigned}, 
+		{"%c", pel_char}, {"%o", pel_octal},
 		{"%i", fire_int}, {"%d", lava_int},
-		{"%%", pel_modular}, {"%b", pel_bin}
+		{"%%", pel_modular}, {"%b", pel_bin},
+		{"%x", pel_hexagon}, {"%X", pel_HEXAGON}
 	};
 
 	va_list pel_args;
@@ -26,7 +27,7 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 5;
+		j = 9;
 		while (j >= 0)
 		{
 			if (arr[j].pel[0] == format[i] && arr[j].pel[1] == format[i + 1])

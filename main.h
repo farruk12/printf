@@ -22,4 +22,9 @@ int pel_strlens(char *pel);
 int fire_int(va_list pel);
 int lava_int(va_list pel);
 int pel_bin(va_list pel);
+int pel_octal(va_list pel);
+int pel_unsigned(va_list pel);
+int pel_hexagon(va_list pel);
+int pel_HEXAGON(va_list pel);
+
 #endif
