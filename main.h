@@ -6,6 +6,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/**
+ * struct structure_form - structure
+ * @pel: argument
+ * @grass: function pointer
+ */
+
 typedef struct structure_form
 {
         char *pel;
@@ -28,6 +34,7 @@ int pel_hexagon(va_list pel);
 int pel_HEXAGON(va_list pel);
 int pel_extra(unsigned int myNum);
 int pel_exstring(va_list pel);
-
+int pel_pointer(va_list pel);
+int pel_ex(unsigned long int myNum);
 
 #endif

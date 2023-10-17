@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 		{"%i", fire_int}, {"%d", lava_int},
 		{"%%", pel_modular}, {"%b", pel_bin},
 		{"%x", pel_hexagon}, {"%X", pel_HEXAGON},
-		{"%S", pel_exstring} 
+		{"%S", pel_exstring}, {"%p.", pel_pointer}
 	};
 
 	va_list pel_args;
@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 10;
+		j = 11;
 		while (j >= 0)
 		{
 			if (arr[j].pel[0] == format[i] && arr[j].pel[1] == format[i + 1])
