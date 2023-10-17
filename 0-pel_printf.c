@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 		{"%s", pel_str},
 		{"%c", pel_char},
 		{"%i", fire_int}, {"%d", lava_int},
-		{"%%", pel_modular},
+		{"%%", pel_modular}, {"%b", pel_bin}
 	};
 
 	va_list pel_args;
@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 4;
+		j = 5;
 		while (j >= 0)
 		{
 			if (arr[j].pel[0] == format[i] && arr[j].pel[1] == format[i + 1])
